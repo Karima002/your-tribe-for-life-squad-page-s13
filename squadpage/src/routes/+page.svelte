@@ -14,6 +14,8 @@
 <Header />
 <main class="squadpage">
 
+  <div class="scroll-bar"></div>
+
   <div class="squadpage-classes">
       <a href="/squad2e">
           <img src={squad2e} alt="squad 2E icon" width="175" height="auto">
@@ -42,6 +44,7 @@
       --background-color: #EDE9FE;
       --card-color: #ffffff;
       --text-color: black;
+      --accent-color: #3b0764;
       --font-regular: 'Jacques Francois', sans-serif;
       --font-size-xsmall: 1em;
       --font-size-small: 1.25em;
@@ -64,6 +67,27 @@
       margin: 0;
     }
 
+    @media (prefers-reduced-motion: no-preference) {
+    .scroll-bar {
+        height: .6em;
+        position: fixed;
+        top: 0;
+        background-color: var(--accent-color);
+        width: 100%;
+        z-index: 1;
+        transform-origin: left;
+        scale: 0 1;
+
+        animation: scroll linear;
+        animation-timeline: scroll(y);
+    }
+    
+    @keyframes scroll {
+        to {
+            scale: 1 1;
+        }
+    }
+  }
     a{
       text-decoration: none;
       color: var(--text-color);
