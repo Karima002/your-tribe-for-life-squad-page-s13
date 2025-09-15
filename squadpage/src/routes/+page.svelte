@@ -28,7 +28,7 @@
         <li>
           <article class="card">
             <picture class="avatar">
-              <img src={member.avatar ? member.avatar : avatar } alt={`Mugshot of ${member.name}`}/> <!--standaard avatar als er geen avatar is --> 
+              <img src={member.avatar ? member.avatar : avatar } alt={`Avatar of ${member.name}`} width="130" height="auto" /> <!--standaard avatar als er geen avatar is --> 
             </picture>
               <a class="name" href={`/members/${member.id}`}>{member.name}</a>
           </article>
@@ -131,8 +131,6 @@
       aspect-ratio: 3 / 4;
       object-fit: cover;
       border-radius: 8px;
-      height: auto;
-      width: 8.2em;
     }
   
     .name {
