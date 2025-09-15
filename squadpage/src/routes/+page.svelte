@@ -14,24 +14,22 @@
 <Header />
 <main class="squadpage">
 
-  <div class="scroll-bar"></div>
-
-  <div class="squadpage-classes">
+  <nav class="squadpage-classes">
       <a href="/squad2e">
           <img src={squad2e} alt="squad 2E icon" width="175" height="auto">
       </a>
       <a href="/squad2f">
           <img src={squad2f} alt="squad 2F icon" width="175" height="auto">
       </a>
-  </div>
+    </nav>
 
   <ul class="students-grid">
       {#each members as member}
         <li>
           <article class="card">
-            <div class="avatar">
+            <picture class="avatar">
               <img src={member.avatar ? member.avatar : avatar } alt={`Mugshot of ${member.name}`} width="130" height="auto" /> <!--standaard avatar als er geen avatar is --> 
-            </div>
+            </picture>
               <a class="name" href={`/members/${member.id}`}>{member.name}</a>
           </article>
         </li> 
@@ -40,7 +38,7 @@
 </main>
 
   <style>
-    :root {
+    	:global(body) {
       --background-color: #EDE9FE;
       --card-color: #ffffff;
       --text-color: black;
@@ -68,7 +66,8 @@
     }
 
     @media (prefers-reduced-motion: no-preference) {
-    .scroll-bar {
+    .squadpage::before {
+        content: '';
         height: .6em;
         position: fixed;
         top: 0;
