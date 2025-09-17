@@ -37,9 +37,22 @@ Geef feedback aan teamleden: Fatima
 Geef feedback aan teamleden: Karima
 
 1. Hoe heb je mij als teamlid ervaren
+- Ik vond het werken met Karima fijn
+- De communicatie verliep soepel. Altijd bereikbaar
+- Komt afspraken na
+- Werkt aan haar eigen taken
+- Werkt efficient
+
 2. Welke tips heb je voor mij
+ - Niet ingaan op commentaar dat is gegeven op jou tijdens een conflict. 
+
 3. Wat zou ik moeten veranderen om prettiger samen te werken
+- Bij elke feat een pull request aanmaken
+  
 4. Waar ben je trots op?
+  - Onze eindresultaat, ondaks een conflict in week 1 hebben we een mooi
+    eindresultaat opgeleverd
+  - Scrollbar
 
 #### 3. Voorbereiding retrospect
 
