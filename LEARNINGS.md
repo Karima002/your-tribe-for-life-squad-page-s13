@@ -25,35 +25,49 @@
    - Gebruik maken van kebab-case in HTML en camel-case in Javascript
    - Het gebruiken van const/let in plaats van var
 
+____
+
 #### 2. Individuele feedback
 
-Geef feedback aan teamleden: Fatima
+#### Geef feedback aan teamleden: Karima
 
-1. Hoe heb je mij als teamlid ervaren
-2. Welke tips heb je voor mij
-3. Wat zou ik moeten veranderen om prettiger samen te werken
-4. Waar ben je trots op?
-
-Geef feedback aan teamleden: Karima
-
-1. Hoe heb je mij als teamlid ervaren
+**1. Hoe heb je mij als teamlid ervaren**
 - Ik vond het werken met Karima fijn
 - De communicatie verliep soepel. Altijd bereikbaar
 - Komt afspraken na
 - Werkt aan haar eigen taken
 - Werkt efficient
 
-2. Welke tips heb je voor mij
+**2. Welke tips heb je voor mij**
  - Niet ingaan op commentaar dat is gegeven op jou tijdens een conflict. 
 
-3. Wat zou ik moeten veranderen om prettiger samen te werken
+**3. Wat zou ik moeten veranderen om prettiger samen te werken**
 - Bij elke feat een pull request aanmaken
   
-4. Waar ben je trots op?
+**4. Waar ben je trots op?**
   - Onze eindresultaat, ondaks een conflict in week 1 hebben we een mooi
     eindresultaat opgeleverd
   - Scrollbar
   - Scrapbook tekeningen
+
+___
+
+#### Geef feedback aan teamleden: Fatima
+
+**1. Hoe heb je mij als teamlid ervaren**
+   Ik heb Fatima als iemand ervaren met een fijne en rustige aanwezigheid binnen het team. Tijdens het conflict ben je erg rustig gebleven ondanks dat dit niet wederzijds was vanuit het andere teamlid. Je luister goed naar de ander maar geeft ook je eigen mening over zaken. Ook ben je altijd bereid om mee te kijken naar het probleem en komen we samen uit op een oplossing.
+   
+**2. Welke tips heb je voor mij**
+   - Een tip die ook voor mij (Karima) geldt: Pull requests kleiner maken zodat de ander niet lang hoeft te wachten
+     
+**3. Wat zou ik moeten veranderen om prettiger samen te werken**
+   - identiek aan bovenstaande tip
+   
+**4. Waar ben je trots op?**
+- De errorpagina die je met weinig code heb gemaakt!
+- Het filteren van de Directus API
+
+___
 
 #### 3. Voorbereiding retrospect
 
