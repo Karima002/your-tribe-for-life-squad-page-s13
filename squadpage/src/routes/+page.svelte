@@ -9,6 +9,7 @@
     // Data uit +page.server.js
     let { data } = $props();
     const members = data.members;
+
 </script>
 
 <Header />
@@ -87,6 +88,33 @@
         }
     }
   }
+
+
+  @keyframes move-out {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+        /* Beweegt omhoog uit het zicht */
+    }
+  }
+
+  @keyframes move-in {
+
+    /* Definieert de 'move-in' animatie voor het nieuwe  element */
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+        /* Beweeg naar de oorspronkelijke positie */
+    }
+}
+
+
     a{
       text-decoration: none;
       color: var(--text-color);
