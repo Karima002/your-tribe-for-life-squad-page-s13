@@ -14,7 +14,7 @@
     <nav>
 
         <a href="/">
-            <img src={squadpage} alt="squadpage sketch"  width="600" height="auto">
+            <img class="squadpage-img" src={squadpage} alt="squadpage sketch">
         </a>
 
         <button class="menu" on:click={() => menuOpen = true}> <!-- open menu button -->
@@ -63,18 +63,35 @@
     button {
         all: unset;
         cursor: pointer;
+    }
 
+    button:focus-visible {
+        outline: 2px solid var(--accent-color);
+        outline-offset: .2em;
+    }
+
+    .squadpage-img {
+        @media (min-width: 368px) {
+            width: 20em;
+        }
+
+        @media (min-width: 724px) {
+            width: 38em;
+        }
     }
 
     .menu{
         display: flex;
         align-items: center;
-        gap: .3em;
+        gap: .2em;
         flex-direction: column;
         position: absolute;
-        top: 1.5em;
+        top: .5em;
         right: 1.5em;
         cursor: pointer;
+        @media (min-width: 724px) {
+            top: 1.5em;
+        }
         
     }
 
@@ -92,6 +109,7 @@
     span{
         font-family: var(--font-regular);
         font-size: var(--font-size-xsmall);
+
     }
 
     .navigation {
