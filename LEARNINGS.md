@@ -53,6 +53,7 @@ Geef feedback aan teamleden: Karima
   - Onze eindresultaat, ondaks een conflict in week 1 hebben we een mooi
     eindresultaat opgeleverd
   - Scrollbar
+  - Scrapbook tekeningen
 
 #### 3. Voorbereiding retrospect
 
