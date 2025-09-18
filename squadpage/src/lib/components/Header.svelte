@@ -18,7 +18,7 @@
         </a>
 
         <button class="menu" on:click={() => menuOpen = true}> <!-- open menu button -->
-            <img src={menuIcon} alt="menu icon" width="60" height="60">
+            <img src={menuIcon} alt="" width="60" height="60">
             <span>Menu</span>
         </button>
 
@@ -27,7 +27,7 @@
             <ul class="navigation" class:open={menuOpen}> <!-- navigation menu, class 'open' toegevoegd als menuOpen true is -->
 
                 <button class="button-close-menu" on:click={() => menuOpen = false}> <!-- close menu button -->
-                    <img src={menuIcon} alt="close menu icon" width="60" height="60">
+                    <img src={menuIcon} alt="sluit menu" width="60" height="60">
                     <span>Sluit</span>
                 </button>
 
