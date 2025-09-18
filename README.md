@@ -38,7 +38,7 @@ Voor het bouwen van deze website hebben wij SvelteKit als framework uitgekozen. 
 
 # Installatie
 
- Als je zelf verder wilt werken aan deze project kan je het volgende doen:
+ Als je zelf verder wilt werken aan dit project kan je het volgende doen:
 
 - Clone de repo
 - Npm install
