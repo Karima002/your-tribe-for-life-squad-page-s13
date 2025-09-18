@@ -18,7 +18,7 @@
         </a>
 
         <button class="menu" on:click={() => menuOpen = true}> <!-- open menu button -->
-            <img src={menuIcon} alt="menu icon" width="60" height="60">
+            <img class="menu-icon" src={menuIcon} alt="menu icon">
             <span>Menu</span>
         </button>
 
@@ -71,30 +71,42 @@
     }
 
     .squadpage-img {
-        @media (min-width: 368px) {
-            width: 20em;
+        @media (min-width: 300px) {
+            width: 15em;
+            height: 5em;
         }
 
         @media (min-width: 724px) {
-            width: 38em;
+            width: 40em;
+            height: 10em;
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
         align-items: center;
         gap: .2em;
         flex-direction: column;
         position: absolute;
-        top: .5em;
+        top: 1.9em;
         right: 1.5em;
         cursor: pointer;
+        font-size: var(--font-size-menu);
         @media (min-width: 724px) {
             top: 1.5em;
+            font-size: var(--font-size-small);
         }
         
     }
 
+    .menu-icon {
+        width: 2em;
+        height: 2em;
+        @media (min-width: 724px) {
+            width: 3em;
+            height: 3em;
+        }
+    }
     .button-close-menu {
         display: flex;
         align-items: center;
@@ -118,7 +130,7 @@
         right: 0;
         top: -2em;
         bottom: -2em;
-        translate: -100% 0%; /* verberg menu buiten scherm */
+        translate: -120% 0%; /* verberg menu buiten scherm */
         transition: translate .3s;
         background-color: var(--background-color);
         z-index: 1;

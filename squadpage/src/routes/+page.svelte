@@ -45,6 +45,7 @@
       --text-color: black;
       --accent-color: #3b0764;
       --font-regular: 'Jacques Francois', sans-serif;
+      --font-size-menu: .75em;
       --font-size-xsmall: 1em;
       --font-size-small: 1.25em;
       --font-size-medium: 1.75em;
