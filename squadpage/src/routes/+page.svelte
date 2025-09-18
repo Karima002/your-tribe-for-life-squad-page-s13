@@ -28,10 +28,15 @@
       {#each members as member}
         <li>
           <article class="card">
+            
             <picture class="avatar">
               <img src={member.avatar ? member.avatar : avatar } alt={member.avatar ? `Github avatar van ${member.name}` : `Standaard avatar voor ${member.name}`} width="130" /> 
             </picture>
+
+            <h2>
               <a class="name" href={`/members/${member.id}`}>{member.name}</a>
+            </h2>
+
           </article>
         </li> 
       {/each}

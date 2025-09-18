@@ -35,7 +35,7 @@
                     <img class="menu-image" src={menu} alt="Menu" width="400">
                 </h1>
 
-                <img class="flower-image" src={flowers} alt="svg of a flowers" width="350">
+                <img class="flower-image" src={flowers} alt="" width="350">
 
                 <li>
                     <a href="/">Home</a>
