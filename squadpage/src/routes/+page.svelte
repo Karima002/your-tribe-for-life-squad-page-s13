@@ -67,7 +67,7 @@
     }
 
     @media (prefers-reduced-motion: no-preference) {
-    .squadpage::before {
+    .squadpage::before { /* https://scroll-driven-animations.style/demos/progress-bar/css/*/
         content: '';
         height: .6em;
         position: fixed;
@@ -141,10 +141,24 @@
       gap: clamp(1rem, 2.5vw, 2rem);
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
     }
-
-    .students-grid li {
-      animation: fade-in 7s forwards;
+    
+    @media (prefers-reduced-motion: no-preference) {
+      .students-grid { 
+          animation: fade-in linear;
+          animation-timeline: view();  /*animatie begint bij het verschijnen in de viewport*/   
+          animation-range: entry;
       }
+
+      @keyframes fade-in { /*scroll driven animations*/
+        0% {
+        opacity: 0;
+        }
+      
+        100% {
+        opacity: 1;
+      }
+    }
+  }
 
     .card {
       background: var(--card-color);
