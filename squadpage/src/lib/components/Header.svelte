@@ -31,10 +31,11 @@
                     <span>Sluit</span>
                 </button>
 
-                <img class="menu-image" src={menu} alt="svg of a menu text" width="400" height="auto">
+                <h1>
+                    <img class="menu-image" src={menu} alt="Menu" width="400">
+                </h1>
 
-                <img class="flower-image" src={flowers} alt="svg of a flowers" width="350" height="auto">
-
+                <img class="flower-image" src={flowers} alt="svg of a flowers" width="350">
 
                 <li>
                     <a href="/">Home</a>
