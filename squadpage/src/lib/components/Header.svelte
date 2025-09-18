@@ -14,7 +14,7 @@
     <nav>
 
         <a href="/">
-            <img class="squadpage-img" src={squadpage} alt="squadpage sketch">
+            <img class="squadpage-img" src={squadpage} alt="titelafbeelding van de squadpagina">
         </a>
 
         <button class="menu" on:click={() => menuOpen = true}> <!-- open menu button -->
