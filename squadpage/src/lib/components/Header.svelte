@@ -27,11 +27,11 @@
             <ul class="navigation" class:open={menuOpen}> <!-- navigation menu, class 'open' toegevoegd als menuOpen true is -->
 
                 <button class="button-close-menu" on:click={() => menuOpen = false}> <!-- close menu button -->
-                    <img src={menuIcon} alt="close menu icon" width="60" height="60">
+                    <img class="image-close-menu" src={menuIcon} alt="close menu icon">
                     <span>Sluit</span>
                 </button>
 
-                <img class="menu-image" src={menu} alt="svg of a menu text" width="400">
+                <img class="menu-image" src={menu} alt="svg of a menu text">
 
                 <img class="flower-image" src={flowers} alt="svg of a flowers" width="350">
 
@@ -91,7 +91,6 @@
         top: 1.9em;
         right: 1.5em;
         cursor: pointer;
-        font-size: var(--font-size-menu);
         @media (min-width: 724px) {
             top: 1.5em;
             font-size: var(--font-size-small);
@@ -107,6 +106,7 @@
             height: 3em;
         }
     }
+
     .button-close-menu {
         display: flex;
         align-items: center;
@@ -118,10 +118,21 @@
         cursor: pointer;
         }
 
+    .image-close-menu {
+        width: 2em;
+        height: 2em;
+        @media (min-width: 724px) {
+            width: 3em;
+            height: 3em;
+        }
+    }
+
     span{
         font-family: var(--font-regular);
-        font-size: var(--font-size-xsmall);
-
+        font-size: var(--font-size-menu);
+        @media (min-width: 724px) {
+            font-size: var(--font-size-xsmall);
+        }
     }
 
     .navigation {
@@ -144,21 +155,35 @@
     .menu-image {
         display: block;
         margin: 2em auto 0 auto;
+        width: 15em;
+        height: 5em;
+        @media (min-width: 724px) {
+            width: 40em;
+            height: 10em;
+        }
     }
    
    .flower-image {
         position: absolute;
         top: .7em;
         left: 0;
+        @media (min-width: 300px) {
+        height: 20em;
+        width: auto;
+        }
     }
 
     .navigation li {
         text-align: center;
         margin: 2em;
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-small);
         font-family: var(--font-regular);
         &:hover{
             text-decoration: underline;
+        }
+        
+        @media (min-width: 724px) {
+            font-size: var(--font-size-medium);
         }
     }
 
