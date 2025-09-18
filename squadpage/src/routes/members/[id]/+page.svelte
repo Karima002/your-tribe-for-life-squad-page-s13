@@ -9,9 +9,10 @@
     const member = data.member;
 
 </script>
+
 <Header />
 <main>
-    <ul class="student-grid">
+    <ul class="students-grid">
         <nav class="back">
             <a href="/" class="back-button">Terug naar Squadpage</a>
           </nav>         
@@ -25,3 +26,44 @@
         </li> 
     </ul>
 </main>
+<style>
+
+
+  * {
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+       padding: 0;
+       margin: 0;
+     }
+  
+      a { 
+       text-decoration: none;
+       color: var(--text-color);
+     }
+
+      .card {
+       background: var(--card-color);
+       border: 1px solid var(--card-color);
+       border-radius: 10px;
+       padding: 1.5rem;       
+       text-align: center;
+       width: 400px;         
+       margin: 2rem auto;
+      }
+
+      .avatar img {
+       display: block;
+       width: 100%;
+       aspect-ratio: 3 / 4;
+       object-fit: cover;
+       border-radius: 8px;
+     }
+
+      .name {
+       margin: 0;
+       font-size: var(--font-size-small);
+       font-family: var(--font-regular);
+     }
+     
+   </style>
+  
