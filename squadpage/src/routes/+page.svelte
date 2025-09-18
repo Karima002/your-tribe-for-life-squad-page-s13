@@ -67,28 +67,32 @@
       margin: 0;
     }
 
+  /*Scroll driven animation*/
     @media (prefers-reduced-motion: no-preference) {
-    .squadpage::before { /* https://scroll-driven-animations.style/demos/progress-bar/css/*/
-        content: '';
-        height: .6em;
-        position: fixed;
-        top: 0;
-        background-color: var(--accent-color);
-        width: 100%;
-        z-index: 1;
-        transform-origin: left;
-        scale: 0 1;
+      @supports (animation-timeline: scroll()) {
 
-        animation: scroll linear;
-        animation-timeline: scroll(y);
-    }
+      .squadpage::before { /* https://scroll-driven-animations.style/demos/progress-bar/css/*/
+          content: '';
+          height: .6em;
+          position: fixed;
+          top: 0;
+          background-color: var(--accent-color);
+          width: 100%;
+          z-index: 1;
+          transform-origin: left;
+          scale: 0 1;
+
+          animation: scroll linear;
+          animation-timeline: scroll(y);
+        }
     
-    @keyframes scroll {
+      @keyframes scroll {
         to {
             scale: 1 1;
         }
+        }
+      }
     }
-  }
 
 
   @keyframes move-out {
@@ -102,9 +106,9 @@
     }
   }
 
+  /*Keyframes for view transitions*/
   @keyframes move-in {
 
-    /* Definieert de 'move-in' animatie voor het nieuwe  element */
     from {
         transform: translateY(100%);
     }
@@ -116,7 +120,7 @@
 }
 
 
-    a{
+    a {
       text-decoration: none;
       color: var(--text-color);
     }
