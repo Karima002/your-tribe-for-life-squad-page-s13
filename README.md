@@ -34,9 +34,17 @@ https://github.com/Karima002/your-tribe-for-life-squad-page-s13/blob/521a54387c5
 
 # Framework
 
-Voor het bouwen van deze website hebben wij SvelteKit als framework uitgekozen. Hieronder zie je hoe je het kan installeren. 
+Voor het bouwen van deze website hebben wij SvelteKit als framework uitgekozen. Hieronder zie je hoe je het kan installeren.
 
 # Installatie
+
+ Als je zelf verder wilt werken aan deze project kan je het volgende doen:
+
+- Clone de repo
+- Npm install
+- local host op npm run dev
+
+Om SvelteKit te installeren kan je de onderstaande stappen volgen.
 
 ## create-svelte
 
