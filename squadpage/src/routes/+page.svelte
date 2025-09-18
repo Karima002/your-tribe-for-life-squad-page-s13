@@ -29,7 +29,7 @@
         <li>
           <article class="card">
             <picture class="avatar">
-              <img src={member.avatar ? member.avatar : avatar } alt={`Avatar of ${member.name}`} width="130" height="auto" /> <!--standaard avatar als er geen avatar is --> 
+              <img src={member.avatar ? member.avatar : avatar } alt={member.avatar ? `Github avatar van ${member.name}` : `Standaard avatar voor ${member.name}`} width="130" /> 
             </picture>
               <a class="name" href={`/members/${member.id}`}>{member.name}</a>
           </article>
