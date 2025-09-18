@@ -17,10 +17,10 @@
 
   <nav class="squadpage-classes">
       <a href="/squad2e">
-          <img src={squad2e} alt="squad 2E icon" width="175" height="auto">
+          <img src={squad2e} alt="squad 2E icon" width="175" >
       </a>
       <a href="/squad2f">
-          <img src={squad2f} alt="squad 2F icon" width="175" height="auto">
+          <img src={squad2f} alt="squad 2F icon" width="175">
       </a>
     </nav>
 
@@ -45,6 +45,7 @@
       --text-color: black;
       --accent-color: #3b0764;
       --font-regular: 'Jacques Francois', sans-serif;
+      --font-size-menu: .75em;
       --font-size-xsmall: 1em;
       --font-size-small: 1.25em;
       --font-size-medium: 1.75em;
@@ -129,6 +130,12 @@
       align-items: center;
       gap: clamp(1rem, 2vw, 2rem);
       background-color: var(--background-color);
+    }
+
+    .squadpage-classes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .students-grid {

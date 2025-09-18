@@ -18,7 +18,7 @@
         </a>
 
         <button class="menu" on:click={() => menuOpen = true}> <!-- open menu button -->
-            <img src={menuIcon} alt="menu icon" width="60" height="60">
+            <img class="menu-icon" src={menuIcon} alt="menu icon">
             <span>Menu</span>
         </button>
 
@@ -27,13 +27,13 @@
             <ul class="navigation" class:open={menuOpen}> <!-- navigation menu, class 'open' toegevoegd als menuOpen true is -->
 
                 <button class="button-close-menu" on:click={() => menuOpen = false}> <!-- close menu button -->
-                    <img src={menuIcon} alt="close menu icon" width="60" height="60">
+                    <img class="image-close-menu" src={menuIcon} alt="close menu icon">
                     <span>Sluit</span>
                 </button>
 
-                <img class="menu-image" src={menu} alt="svg of a menu text" width="400" height="auto">
+                <img class="menu-image" src={menu} alt="svg of a menu text">
 
-                <img class="flower-image" src={flowers} alt="svg of a flowers" width="350" height="auto">
+                <img class="flower-image" src={flowers} alt="svg of a flowers" width="350">
 
 
                 <li>
@@ -71,28 +71,40 @@
     }
 
     .squadpage-img {
-        @media (min-width: 368px) {
-            width: 20em;
+        @media (min-width: 300px) {
+            width: 15em;
+            height: 5em;
         }
 
         @media (min-width: 724px) {
-            width: 38em;
+            width: 40em;
+            height: 10em;
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
         align-items: center;
         gap: .2em;
         flex-direction: column;
         position: absolute;
-        top: .5em;
+        top: 1.9em;
         right: 1.5em;
         cursor: pointer;
         @media (min-width: 724px) {
             top: 1.5em;
+            font-size: var(--font-size-small);
         }
         
+    }
+
+    .menu-icon {
+        width: 2em;
+        height: 2em;
+        @media (min-width: 724px) {
+            width: 3em;
+            height: 3em;
+        }
     }
 
     .button-close-menu {
@@ -106,10 +118,21 @@
         cursor: pointer;
         }
 
+    .image-close-menu {
+        width: 2em;
+        height: 2em;
+        @media (min-width: 724px) {
+            width: 3em;
+            height: 3em;
+        }
+    }
+
     span{
         font-family: var(--font-regular);
-        font-size: var(--font-size-xsmall);
-
+        font-size: var(--font-size-menu);
+        @media (min-width: 724px) {
+            font-size: var(--font-size-xsmall);
+        }
     }
 
     .navigation {
@@ -118,7 +141,7 @@
         right: 0;
         top: -2em;
         bottom: -2em;
-        translate: -100% 0%; /* verberg menu buiten scherm */
+        translate: -120% 0%; /* verberg menu buiten scherm */
         transition: translate .3s;
         background-color: var(--background-color);
         z-index: 1;
@@ -132,21 +155,35 @@
     .menu-image {
         display: block;
         margin: 2em auto 0 auto;
+        width: 15em;
+        height: 5em;
+        @media (min-width: 724px) {
+            width: 40em;
+            height: 10em;
+        }
     }
    
    .flower-image {
         position: absolute;
         top: .7em;
         left: 0;
+        @media (min-width: 300px) {
+        height: 20em;
+        width: auto;
+        }
     }
 
     .navigation li {
         text-align: center;
         margin: 2em;
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-small);
         font-family: var(--font-regular);
         &:hover{
             text-decoration: underline;
+        }
+        
+        @media (min-width: 724px) {
+            font-size: var(--font-size-medium);
         }
     }
 
