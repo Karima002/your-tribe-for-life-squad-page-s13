@@ -131,7 +131,6 @@
       background-color: var(--background-color);
     }
   
-  
     .students-grid {
       width: 100%;
       max-width: 1100px;
@@ -140,9 +139,13 @@
       margin: 0;
       display: grid;
       gap: clamp(1rem, 2.5vw, 2rem);
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
     }
-  
+
+    .students-grid li {
+      animation: fade-in 7s forwards;
+      }
+
     .card {
       background: var(--card-color);
       border: 1px solid #ddd;
