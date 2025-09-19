@@ -67,28 +67,32 @@
       margin: 0;
     }
 
+  /*Scroll driven animation: scrollbar*/
     @media (prefers-reduced-motion: no-preference) {
-    .squadpage::before { /* https://scroll-driven-animations.style/demos/progress-bar/css/*/
-        content: '';
-        height: .6em;
-        position: fixed;
-        top: 0;
-        background-color: var(--accent-color);
-        width: 100%;
-        z-index: 1;
-        transform-origin: left;
-        scale: 0 1;
+      @supports (animation-timeline: scroll()) {
 
-        animation: scroll linear;
-        animation-timeline: scroll(y);
-    }
+      .squadpage::before { /* https://scroll-driven-animations.style/demos/progress-bar/css/*/
+          content: '';
+          height: .6em;
+          position: fixed;
+          top: 0;
+          background-color: var(--accent-color);
+          width: 100%;
+          z-index: 1;
+          transform-origin: left;
+          scale: 0 1;
+
+          animation: scroll linear;
+          animation-timeline: scroll(y);
+        }
     
-    @keyframes scroll {
+      @keyframes scroll {
         to {
             scale: 1 1;
         }
+        }
+      }
     }
-  }
 
 
   @keyframes move-out {
@@ -102,9 +106,9 @@
     }
   }
 
+  /*Keyframes for view transitions*/
   @keyframes move-in {
 
-    /* Definieert de 'move-in' animatie voor het nieuwe  element */
     from {
         transform: translateY(100%);
     }
@@ -116,13 +120,13 @@
 }
 
 
-    a{
+    a {
       text-decoration: none;
       color: var(--text-color);
     }
   
     .squadpage {
-      position: relative; /* nodig voor absolute positioning van menu-button */
+      position: relative;
       min-height: 100vh;
       padding: clamp(1rem, 4vw, 2rem);
       display: flex;
@@ -148,21 +152,24 @@
       gap: clamp(1rem, 2.5vw, 2rem);
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
     }
-    
+
+/* Scroll driven animation: cards*/
     @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) { /*https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline#browser_compatibility*/
+
       .students-grid { 
           animation: fade-in linear;
           animation-timeline: view();  /*animatie begint bij het verschijnen in de viewport*/   
           animation-range: entry;
       }
 
-      @keyframes fade-in { /*scroll driven animations*/
+      @keyframes fade-in { 
         0% {
         opacity: 0;
         }
-      
         100% {
-        opacity: 1;
+          opacity: 1;
+        }
       }
     }
   }
